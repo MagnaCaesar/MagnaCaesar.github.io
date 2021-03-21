@@ -1,0 +1,76 @@
+*{
+  -webkit-transition-duration: .3s;
+}
+body
+{
+  background-color: #273746;
+
+}
+.page
+{
+  margin: 3% auto;
+  width: 75%;
+  background-color: #abb2b9;
+  position:  relative;
+  border-radius: 50px;
+}
+p {
+  font-family:sans serif;
+}
+/*Reset CSS*/
+html{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    border-radius: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 32%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: #641e16;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: #641e16;
+    border-bottom: 7px solid #641e16;
+}
+
+.conteneur{
+	padding: 0% 3% 1% 3%;
+}
+
+.msg {
+    border: 6px red double;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px red;
+    margin-left: 32.25%;
+    width: 35%; 
+    text-align: center;
+}
